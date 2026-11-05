@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grade 7 Science | Interactive ILAW Lesson Planner</title>
+<style>
+:root{--navy:#073b70;--blue:#0879bd;--sky:#e9f6ff;--green:#147a4b;--gold:#f4b400;--ink:#172b42;--muted:#5d7187;--line:#d6e2ed;--paper:#fff;--bg:#f3f7fb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Arial,Helvetica,sans-serif}
+header{background:linear-gradient(115deg,#06386a,#087fbd);color:white;padding:28px max(20px,calc((100% - 1150px)/2));}
+header .tag{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#c9efff;font-weight:bold}
+header h1{margin:5px 0;font-size:clamp(1.7rem,4vw,2.7rem);line-height:1.15}
+header p{max-width:850px;margin:8px 0 0;color:#e7f6ff}
+nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line);display:flex;gap:6px;overflow:auto;padding:9px max(12px,calc((100% - 1150px)/2));box-shadow:0 2px 8px #1231}
+nav button,.btn{border:0;border-radius:9px;padding:10px 14px;background:#eaf3fa;color:var(--navy);font-weight:bold;cursor:pointer;white-space:nowrap}
+nav button.active,.btn.primary{background:var(--blue);color:white}
+main{max-width:1150px;margin:22px auto;padding:0 16px 50px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:20px;margin:0 0 16px;box-shadow:0 5px 18px #18324b0b}
+h2{color:var(--navy);margin:0 0 12px;font-size:1.45rem}h3{color:#075b91;margin:18px 0 7px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.meta{background:var(--sky);border-left:4px solid var(--blue);padding:12px;border-radius:8px}
+.pill{display:inline-block;background:#e3f4ea;color:#11623e;border-radius:99px;padding:4px 10px;font-size:.78rem;font-weight:bold}
+.small{font-size:.9rem;color:var(--muted)}
+ul,ol{padding-left:23px}.hidden{display:none!important}
+table{border-collapse:collapse;width:100%;margin:10px 0}td,th{border:1px solid var(--line);padding:9px;text-align:left}th{background:#eaf4fb;color:var(--navy)}
+.callout{background:#fff8df;border:1px solid #f2df9b;padding:13px;border-radius:10px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;margin:18px 0}
+.organism{background:#eef8ef;border:1px solid #b9dfc1;border-radius:12px;padding:10px;text-align:center;min-width:115px;flex:1}
+.organism b{display:block;color:#155d38}.arrow{font-size:1.6rem;color:#0879bd;font-weight:bold}
+.pyramid{max-width:540px;margin:15px auto;text-align:center}
+.level{margin:5px auto;padding:10px;border:2px solid white;color:#123;font-weight:bold}
+.l4{width:35%;background:#d9b7ed}.l3{width:55%;background:#9ed9f6}.l2{width:76%;background:#ffe28a}.l1{width:100%;background:#9ddc9f}
+.progress{height:9px;background:#e5edf4;border-radius:20px;overflow:hidden}.progress span{display:block;height:100%;background:#0b8bcb;width:0;transition:.2s}
+.question{padding:14px;border:1px solid var(--line);border-radius:12px;margin:12px 0}
+.question label{display:block;padding:6px;cursor:pointer}.feedback{font-weight:bold;margin-top:8px}
+input[type=text],textarea,select{width:100%;padding:10px;border:1px solid #b8c9d8;border-radius:8px;font:inherit}
+textarea{min-height:85px}.slide{min-height:260px;display:flex;flex-direction:column;justify-content:center;text-align:center;background:linear-gradient(135deg,#e9f7ff,#fff);border:1px solid #c5dfef;border-radius:14px;padding:28px}
+.slide h2{font-size:2rem}.slide .number{color:var(--blue);font-weight:bold}
+footer{text-align:center;color:var(--muted);padding:20px}
+@media print{nav,.no-print,.btn{display:none!important}body{background:white}.panel{box-shadow:none;break-inside:avoid}main{max-width:none;margin:0}.hidden{display:block!important}header{background:#fff;color:#123;border-bottom:2px solid #123;padding:15px}header p,header .tag{color:#123}}
+</style>
+</head>
+<body>
+<header>
+ <div class="tag">DepEd Grade 7 Science • Computer-Based Learning</div>
+ <h1>Transfer of Energy in Food Pyramids</h1>
+ <p>Interactive ILAW lesson planner, presentation, learner activities, assessment and printable worksheet.</p>
+</header>
+<nav class="no-print" id="nav">
+ <button class="active" data-tab="overview">Overview</button>
+ <button data-tab="ilaw">ILAW Lesson Plan</button>
+ <button data-tab="slides">Interactive Slides</button>
+ <button data-tab="activities">Activities</button>
+ <button data-tab="quiz">Quiz</button>
+ <button data-tab="worksheet">Worksheet</button>
+ <button data-tab="teacher">Teacher Guide</button>
+</nav>
+<main>
+<section id="overview" class="tab">
+ <div class="panel">
+  <span class="pill">BOW Week 6 • Second Term</span>
+  <h2>Lesson at a glance</h2>
+  <div class="grid">
+   <div class="meta"><b>Learning area</b><br>Science 7</div>
+   <div class="meta"><b>Suggested duration</b><br>60 minutes</div>
+   <div class="meta"><b>Topic</b><br>Transfer of Energy</div>
+   <div class="meta"><b>Learning mode</b><br>Computer-based / blended</div>
+  </div>
+  <h3>Exact BOW learning competency</h3>
+  <p><b>“Use examples of food pyramids to describe the transfer of energy between organisms from one trophic level to another.”</b></p>
+  <p class="small">Source: uploaded “G7 BOW Science 7 - Three-Term(1).pdf”, Second Term, Week 6. This lesson follows the previously discussed Week 5 topic, Trophic Levels.</p>
+  <div class="callout"><b>Essential question:</b> Why is less energy available to organisms at higher levels of a food pyramid?</div>
+  <h3>Learning targets</h3>
+  <ul><li>Trace energy flow from the Sun to producers and consumers.</li><li>Use a food chain and food pyramid to explain energy transfer.</li><li>Interpret an illustrative 10% energy-transfer model.</li><li>Explain why energy is reduced at successive trophic levels.</li></ul>
+ </div>
+ <div class="panel">
+  <h2>Explore the energy pathway</h2>
+  <div class="flow">
+   <div class="organism">☀️<b>Sunlight</b><small>Energy source</small></div><span class="arrow">→</span>
+   <div class="organism">🌿<b>Grass</b><small>Producer</small></div><span class="arrow">→</span>
+   <div class="organism">🦗<b>Grasshopper</b><small>Primary consumer</small></div><span class="arrow">→</span>
+   <div class="organism">🐸<b>Frog</b><small>Secondary consumer</small></div><span class="arrow">→</span>
+   <div class="organism">🐍<b>Snake</b><small>Tertiary consumer</small></div>
+  </div>
+  <p class="small">Arrows show the direction of energy transfer—from the food to the organism that eats it.</p>
+  <h3>Illustrative energy pyramid</h3>
+  <div class="pyramid">
+   <div class="level l4">10 kJ • Tertiary consumer</div>
+   <div class="level l3">100 kJ • Secondary consumer</div>
+   <div class="level l2">1,000 kJ • Primary consumer</div>
+   <div class="level l1">10,000 kJ • Producers</div>
+  </div>
+  <p class="small">The values illustrate an approximate 10% transfer model. Actual energy transfer varies among ecosystems and organisms.</p>
+ </div>
+</section>
+
+<section id="ilaw" class="tab hidden">
+ <div class="panel"><h2>I – INTENTIONS</h2>
+  <h3>Prior knowledge activation (5 minutes)</h3><p>Ask: “What did you eat for breakfast? Where did the energy in that food originally come from?” Invite learners to trace one food item back to its source.</p>
+  <h3>Objectives</h3><ol><li>Identify the original energy source in most food chains.</li><li>Describe how energy passes from producers to consumers.</li><li>Compare the amount of energy available at lower and higher trophic levels.</li><li>Explain the role of energy loss as heat and energy use in life processes.</li></ol>
+  <h3>Success criteria</h3><p>Learners can correctly label a four-level energy pyramid, draw arrows in the correct direction, and explain the decrease in available energy in two or more sentences.</p>
+ </div>
+ <div class="panel"><h2>L – LEARNING EXPERIENCE</h2>
+  <table><tr><th>Time</th><th>Teacher actions</th><th>Learner actions</th></tr>
+   <tr><td>5 min</td><td>Show a meal/food picture. Ask where food energy originates.</td><td>Share ideas and trace food sources.</td></tr>
+   <tr><td>8 min</td><td>Present the grass → grasshopper → frog → snake food chain.</td><td>Identify who eats whom and explain each arrow.</td></tr>
+   <tr><td>12 min</td><td>Discuss energy transfer and the energy pyramid using the model.</td><td>Compare energy at each level and ask questions.</td></tr>
+   <tr><td>10 min</td><td>Model the 10% example using 10,000; 1,000; 100; 10 kJ.</td><td>Calculate the next level's illustrative energy.</td></tr>
+   <tr><td>15 min</td><td>Facilitate the group food-pyramid challenge.</td><td>Create and explain a local ecosystem food pyramid.</td></tr>
+   <tr><td>10 min</td><td>Administer quiz and exit ticket.</td><td>Answer independently and reflect.</td></tr>
+  </table>
+  <h3>Key discussion</h3>
+  <ul><li>Producers capture light energy and store some of it as chemical energy in food.</li><li>Consumers obtain chemical energy by eating organisms.</li><li>Organisms use energy for movement, growth, repair and other life processes; some energy is transferred to the surroundings as heat.</li><li>Energy flows through an ecosystem; nutrients, unlike energy, can be recycled.</li></ul>
+ </div>
+ <div class="panel"><h2>A – ASSESSING LEARNING</h2>
+  <p>Use the interactive quiz and printable worksheet in the tabs. Check whether learners can correctly interpret the arrows, compare energy amounts, and explain why energy available decreases at higher trophic levels.</p>
+ </div>
+ <div class="panel"><h2>W – WAYS FORWARD</h2>
+  <ul><li><b>Remediation:</b> Use organism picture cards; learners arrange producer, primary consumer and secondary consumer, then add arrows.</li><li><b>Enrichment:</b> Compare two food chains in a rice field, mangrove or coastal ecosystem and explain possible effects if one population declines.</li><li><b>Reflection:</b> “One thing I learned about energy transfer is…” and “One question I still have is…”</li></ul>
+ </div>
+</section>
+
+<section id="slides" class="tab hidden">
+ <div class="panel">
+  <div class="grid"><div><h2>Ready-to-discuss presentation</h2><p class="small">Use the controls to move through the slides. Select Full screen for classroom projection.</p></div><div style="text-align:right"><button class="btn" onclick="document.getElementById('slideArea').requestFullscreen?.()">⛶ Full screen</button></div></div>
+  <div class="progress"><span id="slideProgress"></span></div>
+  <div class="slide" id="slideArea"><div class="number" id="slideNum">SLIDE 1 / 12</div><h2 id="slideTitle">Where does food energy come from?</h2><p id="slideText">Think about the food you ate today. What is the original source of energy in most food chains?</p><p id="slidePrompt"><b>Think–Pair–Share:</b> Share one food item and trace its energy source.</p></div>
+  <div class="grid" style="margin-top:12px"><button class="btn" id="prevSlide">← Previous</button><button class="btn primary" id="nextSlide">Next slide →</button></div>
+ </div>
+</section>
+
+<section id="activities" class="tab hidden">
+ <div class="panel"><h2>Activity 1 – Arrange the energy chain</h2><p>Choose the correct organism for each position in the chain.</p>
+  <div class="grid">
+   <label>Producer<select id="a1"><option value="">Choose</option><option>Grass</option><option>Frog</option><option>Snake</option><option>Grasshopper</option></select></label>
+   <label>Primary consumer<select id="a2"><option value="">Choose</option><option>Grass</option><option>Frog</option><option>Snake</option><option>Grasshopper</option></select></label>
+   <label>Secondary consumer<select id="a3"><option value="">Choose</option><option>Grass</option><option>Frog</option><option>Snake</option><option>Grasshopper</option></select></label>
+   <label>Tertiary consumer<select id="a4"><option value="">Choose</option><option>Grass</option><option>Frog</option><option>Snake</option><option>Grasshopper</option></select></label>
+  </div><button class="btn primary" onclick="checkChain()">Check my chain</button><p id="chainFeedback" class="feedback" aria-live="polite"></p>
+ </div>
+ <div class="panel"><h2>Activity 2 – Energy transfer calculator</h2><p>In this simplified model, about 10% of energy at one trophic level is available to the next level.</p>
+  <label>Energy at the lower level (kJ)<input type="number" id="energyInput" value="10000" min="0"></label>
+  <button class="btn primary" onclick="calculateEnergy()">Calculate 10%</button><p id="energyOutput" class="meta" aria-live="polite">Next level: 1,000 kJ</p>
+  <p class="small">This is a teaching model, not a fixed rule for every real ecosystem.</p>
+ </div>
+ <div class="panel"><h2>Activity 3 – Group challenge</h2><p><b>Task:</b> In groups, create a food pyramid for a Philippine ecosystem (rice field, mangrove, forest or coastal ecosystem).</p>
+  <ol><li>Choose at least four organisms that form a plausible feeding sequence.</li><li>Label each trophic level.</li><li>Draw arrows in the direction of energy transfer.</li><li>Explain why less energy is available at the top.</li><li>Present your model in two minutes.</li></ol>
+  <label>Our ecosystem and explanation<textarea placeholder="Write your group's organisms, trophic levels, arrows and explanation here..."></textarea></label>
+ </div>
+</section>
+
+<section id="quiz" class="tab hidden">
+ <div class="panel"><h2>Interactive knowledge check</h2><p>Choose one answer for each question, then select Submit Quiz.</p><div id="quizQuestions"></div><button class="btn primary" onclick="gradeQuiz()">Submit quiz</button><button class="btn" onclick="resetQuiz()">Try again</button><div id="quizResult" class="callout hidden" aria-live="polite"></div></div>
+</section>
+
+<section id="worksheet" class="tab hidden">
+ <div class="panel"><h2>Printable learner worksheet</h2>
+  <label>Learner's name<input type="text" placeholder="Enter your name"></label><br>
+  <label>Grade and section<input type="text" placeholder="Enter grade and section"></label>
+  <h3>Part A – Complete the statements</h3>
+  <ol><li>The original energy source for most ecosystems is the __________.</li><li>Organisms that make their own food are called __________.</li><li>Arrows in a food chain show the direction of __________ transfer.</li></ol>
+  <h3>Part B – Explain</h3>
+  <ol><li>Why is the producer level usually the widest part of an energy pyramid?</li><li>Why is less energy available at higher trophic levels?</li><li>What may happen to frogs if grasshoppers become scarce? Explain.</li></ol>
+  <h3>Part C – Draw</h3><p>Draw and label a four-level food chain from a familiar ecosystem. Include arrows showing energy transfer.</p>
+  <textarea placeholder="Use this space for written answers or notes. For the food-chain drawing, use paper or a drawing app."></textarea>
+  <h3>Answer key – teacher use</h3><button class="btn no-print" onclick="document.getElementById('answers').classList.toggle('hidden')">Show / hide answer key</button>
+  <div id="answers" class="hidden"><ol><li>Sun</li><li>Producers</li><li>Energy</li><li>Producers capture energy and form the base supporting consumers.</li><li>Organisms use energy for life processes and some is dissipated as heat; not all biomass/energy is passed on.</li><li>Frog numbers may decrease because less food is available, although other factors also affect populations.</li></ol></div>
+  <button class="btn primary no-print" onclick="window.print()">Print worksheet / Save as PDF</button>
+ </div>
+</section>
+
+<section id="teacher" class="tab hidden">
+ <div class="panel"><h2>Teacher guide and assessment rubric</h2>
+  <h3>Materials</h3><p>Computer/projector or printed infographic, board, paper, markers, organism cards, calculator (optional).</p>
+  <h3>Misconceptions to address</h3><ul><li>Energy arrows point from the food source to the consumer, not toward the organism being eaten.</li><li>The 10% model is approximate; transfer efficiency varies.</li><li>Decomposers act on dead organisms and wastes from all trophic levels; they are not simply a single final step in every food chain.</li><li>Energy flows and is eventually dissipated; matter/nutrients are recycled.</li></ul>
+  <h3>Performance task rubric (40 points)</h3>
+  <table><tr><th>Criteria</th><th>4 – Excellent</th><th>3 – Good</th><th>2 – Developing</th><th>1 – Beginning</th></tr>
+   <tr><td>Scientific accuracy (10)</td><td colspan="4">Score 9–10: accurate organisms and energy explanation; 7–8: minor errors; 5–6: several errors; 1–4: major errors.</td></tr>
+   <tr><td>Trophic levels (10)</td><td colspan="4">Score 9–10: all correctly labeled; 7–8: one error; 5–6: two errors; 1–4: many missing/incorrect labels.</td></tr>
+   <tr><td>Energy-flow arrows (10)</td><td colspan="4">Score 9–10: all arrows correct; 7–8: one error; 5–6: several errors; 1–4: arrows absent or reversed.</td></tr>
+   <tr><td>Communication and teamwork (10)</td><td colspan="4">Score 9–10: clear explanation and shared participation; 7–8: mostly clear; 5–6: limited explanation; 1–4: incomplete presentation.</td></tr>
+  </table>
+  <h3>Teacher reflection</h3><textarea placeholder="Were learners able to explain energy transfer? Which learners need remediation? What will you adjust next time?"></textarea>
+  <div class="callout"><b>Curriculum note:</b> This lesson is based on the Week 6 competency in the uploaded three-term Grade 7 Science BOW. Confirm the school's current pacing and local lesson-plan requirements before classroom use.</div>
+ </div>
+</section>
+</main>
+<footer>Grade 7 Science • Interactive ILAW Lesson Resource • Teacher may adapt for class context</footer>
+<script>
+const tabs=[...document.querySelectorAll('nav button')];
+tabs.forEach(b=>b.addEventListener('click',()=>{tabs.forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.tab').forEach(s=>s.classList.toggle('hidden',s.id!==b.dataset.tab));window.scrollTo({top:0,behavior:'smooth'});}));
+const slides=[
+["Where does food energy come from?","Think about the food you ate today. What is the original source of energy in most food chains?","Think–Pair–Share: Share one food item and trace its energy source."],
+["Learning targets","Today we will trace energy flow, interpret a food pyramid, and explain why less energy is available at higher trophic levels.","Success check: Can you explain the arrows and compare energy amounts?"],
+["Review: Food chains","A food chain is a model showing how energy passes as one organism eats another.","Name a producer and three consumers in a local food chain."],
+["The Sun and producers","Most ecosystem energy begins as sunlight. Producers such as grass use photosynthesis to store light energy as chemical energy in food.","Why are plants important to consumers?"],
+["Consumers obtain energy","Primary consumers eat producers. Secondary consumers eat primary consumers. Tertiary consumers eat secondary consumers.","Classify grasshopper, frog and snake in the example chain."],
+["Follow the arrows","Grass → grasshopper → frog → snake. Each arrow points from the organism eaten to the organism that obtains energy.","Explain why the arrow does not point toward the grass."],
+["What is an energy pyramid?","An energy pyramid represents the amount of energy available at each trophic level. The producer level forms the broad base.","Which level has the greatest amount of available energy?"],
+["A simple energy model","If producers store 10,000 kJ, an illustrative 10% transfer gives 1,000 kJ to primary consumers, 100 kJ to secondary consumers and 10 kJ to tertiary consumers.","Calculate 10% of 500 kJ."],
+["Why does energy decrease?","Organisms use energy for movement, growth, repair and reproduction. Some energy is released to the surroundings as heat; not all food is eaten or digested.","Give two life processes that use energy."],
+["Local ecosystem connection","Rice fields, mangroves, forests and coastal waters contain food chains. Changes in one population can affect other organisms.","Create a plausible local food chain and label its trophic levels."],
+["Check your understanding","Explain the difference between energy flow and nutrient recycling. Remember: energy flows through ecosystems; nutrients can be recycled.","Write one sentence explaining why energy is less available at higher levels."],
+["Exit ticket","1. What is the original energy source? 2. What do arrows show? 3. Why does available energy decrease up the pyramid?","Submit your answers to your teacher."]
+];
+let slideIndex=0;
+function renderSlide(){let s=slides[slideIndex];document.getElementById('slideNum').textContent=`SLIDE ${slideIndex+1} / ${slides.length}`;document.getElementById('slideTitle').textContent=s[0];document.getElementById('slideText').textContent=s[1];document.getElementById('slidePrompt').innerHTML='<b>Discuss / Do:</b> '+s[2];document.getElementById('slideProgress').style.width=((slideIndex+1)/slides.length*100)+'%';document.getElementById('prevSlide').disabled=slideIndex===0;document.getElementById('nextSlide').textContent=slideIndex===slides.length-1?'Back to first slide ↻':'Next slide →';}
+document.getElementById('prevSlide').onclick=()=>{slideIndex=Math.max(0,slideIndex-1);renderSlide()};
+document.getElementById('nextSlide').onclick=()=>{slideIndex=(slideIndex+1)%slides.length;renderSlide()};renderSlide();
+function checkChain(){let vals=['a1','a2','a3','a4'].map(id=>document.getElementById(id).value);let correct=['Grass','Grasshopper','Frog','Snake'];let n=vals.filter((v,i)=>v===correct[i]).length;document.getElementById('chainFeedback').textContent=`You got ${n}/4 correct. Correct sequence: Grass → Grasshopper → Frog → Snake.`;document.getElementById('chainFeedback').style.color=n===4?'#147a4b':'#a15c00'}
+function calculateEnergy(){let v=Number(document.getElementById('energyInput').value);document.getElementById('energyOutput').textContent=Number.isFinite(v)&&v>=0?`10% of ${v.toLocaleString()} kJ = ${(v*.1).toLocaleString()} kJ available to the next level in this simplified model.`:'Please enter a non-negative number.'}
+const quiz=[
+["What is the original energy source for most food chains?",["The Moon","The Sun","Soil","Wind"],1,"Sunlight is captured by producers through photosynthesis."],
+["What does an arrow in a food chain represent?",["Direction of energy transfer","Direction an animal walks","Increase in population","Water movement"],0,"The arrow points from the food organism to the organism that eats it."],
+["Which level generally has the greatest available energy?",["Tertiary consumers","Secondary consumers","Primary consumers","Producers"],3,"Producers form the base of the energy pyramid."],
+["Why is less energy available at higher trophic levels?",["Energy is used in life processes and dissipated as heat","Energy is created at the top","Consumers do not need energy","The Sun stops shining"],0,"Organisms use energy and some is transferred to the surroundings as heat."],
+["If producers have 2,000 kJ, what is 10% in the simplified model?",["2 kJ","20 kJ","200 kJ","1,000 kJ"],2,"10% of 2,000 kJ is 200 kJ."]
+];
+const qbox=document.getElementById('quizQuestions');
+quiz.forEach((q,i)=>{let d=document.createElement('div');d.className='question';d.innerHTML=`<b>${i+1}. ${q[0]}</b>`+q[1].map((o,j)=>`<label><input type="radio" name="q${i}" value="${j}"> ${o}</label>`).join('')+`<div id="fb${i}" class="feedback"></div>`;qbox.appendChild(d)});
+function gradeQuiz(){let score=0;quiz.forEach((q,i)=>{let chosen=document.querySelector(`input[name=q${i}]:checked`);let fb=document.getElementById('fb'+i);if(chosen&&Number(chosen.value)===q[2]){score++;fb.textContent='Correct. '+q[3];fb.style.color='#147a4b'}else{fb.textContent='Correct answer: '+q[1][q[2]]+'. '+q[3];fb.style.color='#a15c00'}});let r=document.getElementById('quizResult');r.classList.remove('hidden');r.innerHTML=`<b>Your score: ${score}/5 (${score*20}%)</b><br>${score>=4?'Great work!':score>=3?'Good effort. Review the explanations above.':'Review the lesson and try again.'}`}
+function resetQuiz(){document.querySelectorAll('#quizQuestions input').forEach(x=>x.checked=false);document.querySelectorAll('#quizQuestions .feedback').forEach(x=>x.textContent='');document.getElementById('quizResult').classList.add('hidden')}
+</script>
+</body></html>
