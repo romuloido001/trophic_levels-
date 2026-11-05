@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Interactive ILAW lesson plan for Year 7 Biology: Food Webs and Ecosystem Changes.">
+<title>ILAW | Food Webs and Ecosystem Changes</title>
+<style>
+:root{--ink:#203047;--muted:#64748b;--paper:#fffdf7;--line:#e8e1d4;--teal:#0f766e;--blue:#2563eb;--orange:#ea580c;--green:#15803d;--pink:#be185d;--shadow:0 12px 32px #1e293b12}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f4f7f6;color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:linear-gradient(125deg,#123d46,#126e68 60%,#e0a34a);color:white;padding:34px 20px 28px}
+.wrap{max-width:1120px;margin:auto;padding:0 18px}.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:800;opacity:.85}
+h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.08;margin:.35rem 0}.subtitle{font-size:1.12rem;max-width:760px;opacity:.95}
+.meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.pill{border:1px solid #ffffff70;border-radius:999px;padding:5px 12px;font-size:.85rem;background:#ffffff12}
+nav{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 3px 12px #00000008}
+.navinner{display:flex;gap:5px;overflow:auto;padding:8px 0}.navinner a{white-space:nowrap;text-decoration:none;color:#334155;padding:9px 13px;border-radius:9px;font-weight:650;font-size:.92rem}.navinner a:hover,.navinner a.active{background:#dff3ef;color:#075e57}
+main{padding:26px 0 60px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:17px;padding:22px;box-shadow:var(--shadow);margin-bottom:18px}.span8{grid-column:span 8}.span4{grid-column:span 4}.span6{grid-column:span 6}.span12{grid-column:span 12}
+h2{font-size:1.55rem;margin:0 0 12px}h3{font-size:1.08rem;margin:16px 0 6px;color:#145c58}.kicker{font-weight:800;color:var(--teal);text-transform:uppercase;font-size:.76rem;letter-spacing:.1em}
+ul,ol{padding-left:22px}.callout{border-left:4px solid var(--orange);background:#fff7ed;padding:12px 15px;border-radius:8px;margin:12px 0}.objective{display:flex;gap:12px;align-items:flex-start;margin:12px 0}.check{width:27px;height:27px;flex:none;border-radius:8px;background:#dff3ef;color:#08766d;display:grid;place-items:center;font-weight:900}
+button,.btn{border:0;border-radius:10px;padding:10px 15px;background:var(--teal);color:white;font-weight:750;cursor:pointer;font:inherit}.btn.secondary,button.secondary{background:#e8f2f1;color:#075e57}.btn.orange,button.orange{background:var(--orange)}button:hover,.btn:hover{filter:brightness(.95)}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #f59e0b;outline-offset:2px}
+.tabbar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}.tab{background:#edf3f2;color:#234;border:1px solid #d9e5e2}.tab[aria-selected="true"]{background:var(--teal);color:white}
+.panel{display:none}.panel.active{display:block}.lesson-step{border-left:3px solid #99c9c2;padding:4px 0 4px 16px;margin:16px 0}.time{font-size:.8rem;font-weight:800;color:var(--orange)}
+.term{display:inline-block;background:#eaf5f3;color:#075e57;border-radius:6px;padding:1px 7px;font-weight:700}
+.diagram{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;padding:18px;background:#f5faf8;border:1px dashed #b8d6cf;border-radius:14px;margin:12px 0}.node{background:white;border:2px solid #9cc9c0;border-radius:12px;padding:10px 12px;text-align:center;min-width:110px;font-weight:750}.arrow{font-size:1.5rem;color:var(--orange);font-weight:900}
+.question{padding:14px 0;border-bottom:1px solid var(--line)}.question:last-child{border:0}.question p{font-weight:700;margin:0 0 8px}.question label{display:block;padding:5px 0;cursor:pointer}.feedback{font-weight:700;margin-top:8px;min-height:24px}.good{color:var(--green)}.bad{color:#b91c1c}
+input[type=text],textarea{width:100%;border:1px solid #cbd5e1;border-radius:9px;padding:10px;font:inherit;margin:5px 0 12px}textarea{min-height:90px}
+.progress{height:10px;background:#e5e7eb;border-radius:20px;overflow:hidden}.progress>div{height:100%;background:#0f9b8e;width:0;transition:width .3s}
+footer{background:#173c42;color:#e6f4f1;padding:25px 0;font-size:.9rem}
+.small{font-size:.9rem;color:var(--muted)}.tag{display:inline-block;font-size:.78rem;background:#fff0df;color:#92400e;border-radius:6px;padding:3px 8px;font-weight:800}
+@media(max-width:760px){.span8,.span4,.span6{grid-column:span 12}.card{padding:17px}.navinner{padding-left:8px;padding-right:8px}}
+@media print{nav,.no-print,button{display:none!important}body{background:white}.card{box-shadow:none;break-inside:avoid}.panel{display:block!important}header{background:#fff;color:#111;padding:10px 0}.subtitle{color:#333}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <div class="eyebrow">Interactive Learning Activity / ILAW</div>
+  <h1>Food Webs &amp;<br>Ecosystem Changes</h1>
+  <p class="subtitle">An inquiry-based lesson about how energy moves through ecosystems and how living and non-living changes affect populations.</p>
+  <div class="meta"><span class="pill">Year 7 Biology</span><span class="pill">Suggested duration: 60 minutes</span><span class="pill">Teacher + learner activities</span><span class="pill">Interactive assessment</span></div>
+ </div>
+</header>
+<nav><div class="wrap navinner">
+ <a href="#overview">Overview</a><a href="#teach">Teacher Guide</a><a href="#learn">Learner Tasks</a><a href="#explore">Explore</a><a href="#quiz">Quiz</a><a href="#worksheet">Worksheet</a><a href="#reflection">Reflection</a>
+</div></nav>
+<main class="wrap">
+<section id="overview" class="grid">
+ <article class="card span8">
+  <div class="kicker">Lesson overview</div><h2>Learning intentions</h2>
+  <p>By the end of the lesson, learners should be able to:</p>
+  <div class="objective"><span class="check">1</span><div><b>Model feeding relationships</b><br>Use food chains and food webs to show how energy flows between organisms.</div></div>
+  <div class="objective"><span class="check">2</span><div><b>Explain ecosystem factors</b><br>Distinguish abiotic (non-living) and biotic (living) factors that affect organisms.</div></div>
+  <div class="objective"><span class="check">3</span><div><b>Predict ecosystem change</b><br>Use a food web to predict how a change may affect populations.</div></div>
+  <div class="callout"><b>Success criteria:</b> I can identify producers and consumers, interpret arrow direction, build a connected food web, and explain at least one cause-and-effect change in a population.</div>
+ </article>
+ <aside class="card span4">
+  <div class="kicker">Curriculum connection</div><h2>Source alignment</h2>
+  <p><b>Australian Curriculum: AC9S7U02</b></p>
+  <p class="small">Use models, including food webs, to represent matter and energy flow in ecosystems and predict the impact of changing abiotic and biotic factors on populations.</p>
+  <hr style="border:0;border-top:1px solid var(--line)">
+  <p><b>Materials</b></p><ul><li>Organism cards or board drawings</li><li>Paper / science notebook</li><li>Projector or this HTML lesson</li><li>Pen or pencil</li></ul>
+  <p class="small">The uploaded presentation names Year 7 Biology and AC9S7U02. Replace or supplement this curriculum link if your school requires a different local competency.</p>
+ </aside>
+ <article class="card span12">
+  <div class="kicker">Key vocabulary</div>
+  <div class="grid">
+   <div class="span6"><b>Ecosystem</b> — a community of living organisms interacting with their environment.<br><b>Abiotic factor</b> — a non-living part of the environment, such as sunlight, water, temperature or soil.<br><b>Biotic factor</b> — a living part, such as plants, animals, fungi or bacteria.</div>
+   <div class="span6"><b>Producer</b> — an organism, such as a plant, that makes its own food.<br><b>Consumer</b> — an organism that obtains energy by eating other organisms.<br><b>Population</b> — a group of the same species living in the same place.</div>
+  </div>
+ </article>
+</section>
+
+<section id="teach" class="card">
+ <div class="kicker">Teacher guide</div><h2>Suggested lesson sequence</h2>
+ <p class="small">Adjust the timings to fit your class. Use the prompts to guide discussion and check understanding.</p>
+ <div class="lesson-step"><span class="time">0–5 MIN · ENGAGE</span><h3>Hook: Who depends on whom?</h3><p>Display a plant, grasshopper, frog and snake. Ask: “If the grass disappeared, which organisms might be affected? Why?” Invite learners to share predictions without correcting them immediately.</p><b>Check for:</b> Learners noticing that organisms are connected through feeding relationships.</div>
+ <div class="lesson-step"><span class="time">5–15 MIN · EXPLAIN</span><h3>Build the foundation</h3><p>Explain ecosystem, abiotic and biotic factors. Emphasize that most ecosystems receive energy from the Sun; plants capture sunlight through photosynthesis, and animals obtain energy by eating organisms.</p><b>Ask:</b> “Is sunlight biotic or abiotic? Is a fungus biotic or abiotic?”</div>
+ <div class="lesson-step"><span class="time">15–25 MIN · MODEL</span><h3>Food chains and trophic levels</h3><p>Model a simple chain: grass → grasshopper → frog → snake. Explain that arrows point in the direction energy moves (from the food organism to the organism that eats it).</p><b>Ask:</b> “What does the arrow from grass to grasshopper mean?”</div>
+ <div class="lesson-step"><span class="time">25–40 MIN · GUIDED PRACTICE</span><h3>Connect food chains into a food web</h3><p>Have groups draw several overlapping food chains. Ask learners to identify producers, primary consumers, secondary consumers and tertiary consumers where applicable.</p><b>Teacher move:</b> Ask groups to trace more than one pathway from a producer to a predator.</div>
+ <div class="lesson-step"><span class="time">40–52 MIN · APPLY</span><h3>What if the ecosystem changes?</h3><p>Present a drought, flood, temperature increase, new predator or disease scenario. Learners predict which populations may increase or decrease and explain the links in the web.</p><b>Prompt:</b> “What evidence in your food web supports your prediction?”</div>
+ <div class="lesson-step"><span class="time">52–60 MIN · EVALUATE</span><h3>Exit ticket</h3><p>Learners complete the quiz and one-sentence reflection: “A change in ______ may affect ______ because ______.”</p></div>
+</section>
+
+<section id="learn" class="card">
+ <div class="kicker">Learner activities</div><h2>Choose a learning task</h2>
+ <div class="tabbar" role="tablist">
+  <button class="tab" role="tab" aria-selected="true" data-tab="task1">Task 1 · Sort</button>
+  <button class="tab" role="tab" aria-selected="false" data-tab="task2">Task 2 · Build</button>
+  <button class="tab" role="tab" aria-selected="false" data-tab="task3">Task 3 · Predict</button>
+ </div>
+ <div id="task1" class="panel active"><h3>Sort the ecosystem factors</h3><p>Classify each item as living (biotic) or non-living (abiotic).</p>
+  <div class="grid"><div class="span6"><b>Sunlight</b><select class="sort" data-answer="abiotic"><option value="">Choose…</option><option>biotic</option><option>abiotic</option></select></div><div class="span6"><b>Fungi</b><select class="sort" data-answer="biotic"><option value="">Choose…</option><option>biotic</option><option>abiotic</option></select></div><div class="span6"><b>Soil</b><select class="sort" data-answer="abiotic"><option value="">Choose…</option><option>biotic</option><option>abiotic</option></select></div><div class="span6"><b>Deer</b><select class="sort" data-answer="biotic"><option value="">Choose…</option><option>biotic</option><option>abiotic</option></select></div></div>
+  <button class="secondary" onclick="checkSort()">Check answers</button><p id="sortFeedback" class="feedback" aria-live="polite"></p>
+ </div>
+ <div id="task2" class="panel"><h3>Construct a food chain</h3><p>Arrange the organisms in the correct energy-flow order by choosing the sequence.</p>
+  <label for="chain">Food chain sequence</label><select id="chain"><option value="">Select a sequence…</option><option value="wrong">snake → frog → grasshopper → grass</option><option value="right">grass → grasshopper → frog → snake</option><option value="wrong2">frog → grass → snake → grasshopper</option></select>
+  <button class="secondary" onclick="checkChain()">Check sequence</button><p id="chainFeedback" class="feedback" aria-live="polite"></p>
+  <div class="diagram"><div class="node">🌿 Grass<br><small>Producer</small></div><span class="arrow">→</span><div class="node">🦗 Grasshopper<br><small>Primary consumer</small></div><span class="arrow">→</span><div class="node">🐸 Frog<br><small>Secondary consumer</small></div><span class="arrow">→</span><div class="node">🐍 Snake<br><small>Predator</small></div></div>
+  <p class="small">Arrows show the direction of energy flow: from the organism being eaten to the organism that eats it.</p>
+ </div>
+ <div id="task3" class="panel"><h3>Predict a population change</h3><p>Imagine a long drought reduces the amount of grass available in an ecosystem. What is a reasonable prediction?</p>
+  <label><input type="radio" name="predict" value="a"> Grasshoppers may decrease because less food is available.</label>
+  <label><input type="radio" name="predict" value="b"> All animal populations must increase.</label>
+  <label><input type="radio" name="predict" value="c"> The drought has no effect on living things.</label>
+  <button class="secondary" onclick="checkPredict()">Check prediction</button><p id="predictFeedback" class="feedback" aria-live="polite"></p>
+ </div>
+</section>
+
+<section id="explore" class="grid">
+ <article class="card span6"><div class="kicker">Explore the model</div><h2>Food web connections</h2><p>Study this simplified example. A food web is made of many connected food chains.</p>
+  <div class="diagram"><div class="node">☀️ Sun</div><span class="arrow">↓</span><div class="node">🌱 Grass / plants</div></div>
+  <div class="diagram"><div class="node">🌱 Plants</div><span class="arrow">→</span><div class="node">🐇 Rabbit</div><span class="arrow">→</span><div class="node">🦊 Fox</div></div>
+  <div class="diagram"><div class="node">🌱 Plants</div><span class="arrow">→</span><div class="node">🦌 Deer</div><span class="arrow">→</span><div class="node">🐺 Wolf</div></div>
+  <p class="small">This is an illustrative model for practice, not a complete food web for a named habitat.</p>
+ </article>
+ <article class="card span6"><div class="kicker">Case study from the presentation</div><h2>Coral reef ecosystem</h2>
+  <p>Many organisms depend on coral for shelter, food and breeding areas. When ocean temperatures increase, coral bleaching can occur. This can reduce coral populations and affect many species in the food web.</p>
+  <h3>Think–pair–share</h3><ol><li>What abiotic factor is changing?</li><li>How might fewer healthy corals affect organisms that depend on them?</li><li>Why could the effect spread through a food web?</li></ol>
+  <div class="callout"><b>Key idea:</b> A change to one factor or population can affect other organisms because species are interconnected.</div>
+ </article>
+</section>
+
+<section id="quiz" class="card">
+ <div class="kicker">Check your understanding</div><h2>Quick knowledge check</h2><p>Answer all five questions, then select <b>Mark my quiz</b>.</p>
+ <div class="progress"><div id="quizProgress"></div></div><p class="small" id="answeredCount">0 of 5 answered</p>
+ <form id="quizForm">
+  <div class="question"><p>1. Which is an abiotic factor?</p><label><input type="radio" name="q1" value="a"> Fungi</label><label><input type="radio" name="q1" value="b"> Sunlight</label><label><input type="radio" name="q1" value="c"> Deer</label></div>
+  <div class="question"><p>2. Which organism is a producer?</p><label><input type="radio" name="q2" value="a"> Grass</label><label><input type="radio" name="q2" value="b"> Frog</label><label><input type="radio" name="q2" value="c"> Snake</label></div>
+  <div class="question"><p>3. What does an arrow in a food chain show?</p><label><input type="radio" name="q3" value="a"> Where an organism lives</label><label><input type="radio" name="q3" value="b"> The direction energy moves</label><label><input type="radio" name="q3" value="c"> The size of an organism</label></div>
+  <div class="question"><p>4. Why is a food web useful?</p><label><input type="radio" name="q4" value="a"> It shows many connected feeding relationships</label><label><input type="radio" name="q4" value="b"> It shows only one feeding pathway</label><label><input type="radio" name="q4" value="c"> It lists only non-living things</label></div>
+  <div class="question"><p>5. Which is an example of a biotic change?</p><label><input type="radio" name="q5" value="a"> A flood</label><label><input type="radio" name="q5" value="b"> A temperature increase</label><label><input type="radio" name="q5" value="c"> A disease affecting a species</label></div>
+  <button type="button" onclick="markQuiz()">Mark my quiz</button> <button type="reset" class="secondary" onclick="setTimeout(resetQuiz,0)">Reset</button>
+ </form><div id="quizResult" class="feedback" aria-live="polite"></div>
+</section>
+
+<section id="worksheet" class="card">
+ <div class="kicker">Printable learner worksheet</div><h2>Apply what you learned</h2>
+ <p><b>Name:</b> <input type="text" aria-label="Learner name" placeholder="Write your name"></p>
+ <ol>
+  <li><b>Define:</b> What is an ecosystem? <textarea aria-label="Define ecosystem" placeholder="Write your answer…"></textarea></li>
+  <li><b>Classify:</b> Give two examples of abiotic factors and two examples of biotic factors.
+   <textarea aria-label="Classify factors" placeholder="Abiotic: …&#10;Biotic: …"></textarea></li>
+  <li><b>Model:</b> Draw a food chain with at least four organisms in your notebook. Label the producer and consumers. Remember to point arrows in the direction energy moves.</li>
+  <li><b>Explain:</b> If a disease reduces the number of rabbits, how might this affect a predator that eats rabbits? Explain your reasoning.
+   <textarea aria-label="Explain population change" placeholder="I predict… because…"></textarea></li>
+  <li><b>Case study:</b> Explain one possible effect of coral bleaching on organisms in a coral reef food web.
+   <textarea aria-label="Coral reef response" placeholder="One possible effect is…"></textarea></li>
+ </ol>
+ <button class="no-print" onclick="window.print()">Print worksheet / lesson</button>
+</section>
+
+<section id="reflection" class="card">
+ <div class="kicker">Metacognition</div><h2>My learning reflection</h2>
+ <p>Complete the statements honestly.</p>
+ <label><input type="checkbox"> I can identify biotic and abiotic factors.</label><br>
+ <label><input type="checkbox"> I can explain the direction of energy flow in a food chain.</label><br>
+ <label><input type="checkbox"> I can explain how a food web connects food chains.</label><br>
+ <label><input type="checkbox"> I can predict how an ecosystem change may affect a population.</label>
+ <h3>One idea I understand better now:</h3><textarea placeholder="Write your reflection…"></textarea>
+ <h3>One question I still have:</h3><textarea placeholder="Write your question…"></textarea>
+</section>
+<section class="card">
+ <div class="kicker">Teacher assessment notes</div><h2>Evidence of learning</h2>
+ <ul><li><b>Beginning:</b> Identifies some organisms or factors with support.</li><li><b>Developing:</b> Correctly classifies factors and describes a simple food chain.</li><li><b>Proficient:</b> Builds a connected food web and explains arrow direction and trophic roles.</li><li><b>Extending:</b> Uses food-web links to justify predictions about changes in populations.</li></ul>
+ <p class="small">Suggested evidence: group food-web model, responses to the coral reef case study, interactive quiz result and completed worksheet.</p>
+</section>
+</main>
+<footer><div class="wrap"><b>ILAW · Food Webs and Ecosystem Changes</b><br>Prepared as a standalone, editable HTML learning resource. The lesson content is based on the uploaded presentation. Teacher may adapt duration, examples and curriculum references to local requirements.</div></footer>
+<script>
+const tabs=[...document.querySelectorAll('[data-tab]')];
+tabs.forEach(btn=>btn.addEventListener('click',()=>{tabs.forEach(b=>b.setAttribute('aria-selected',String(b===btn)));document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===btn.dataset.tab));}));
+function checkSort(){let s=[...document.querySelectorAll('.sort')],n=s.filter(x=>x.value===x.dataset.answer).length;let f=document.getElementById('sortFeedback');f.textContent=`You got ${n} out of ${s.length} correct.`;f.className='feedback '+(n===s.length?'good':'bad');}
+function checkChain(){let v=document.getElementById('chain').value,f=document.getElementById('chainFeedback');f.textContent=v==='right'?'Correct! Energy moves from grass to grasshopper to frog to snake.':'Try again. Start with the producer, then follow who eats whom.';f.className='feedback '+(v==='right'?'good':'bad');}
+function checkPredict(){let v=document.querySelector('input[name="predict"]:checked'),f=document.getElementById('predictFeedback');if(!v){f.textContent='Choose an answer first.';return;}f.textContent=v.value==='a'?'Good prediction. Less grass can mean less food for grasshoppers.':'Review the scenario: a drought reduces available grass, which can affect organisms that eat it.';f.className='feedback '+(v.value==='a'?'good':'bad');}
+const answers={q1:'b',q2:'a',q3:'b',q4:'a',q5:'c'};
+function updateProgress(){let n=Object.keys(answers).filter(k=>document.querySelector(`input[name="${k}"]:checked`)).length;document.getElementById('answeredCount').textContent=`${n} of 5 answered`;document.getElementById('quizProgress').style.width=(n/5*100)+'%';}
+document.querySelectorAll('#quizForm input').forEach(i=>i.addEventListener('change',updateProgress));
+function markQuiz(){let score=0,missing=0;for(let k in answers){let v=document.querySelector(`input[name="${k}"]:checked`);if(!v)missing++;else if(v.value===answers[k])score++;}let r=document.getElementById('quizResult');r.textContent=missing?`Please answer all questions. ${missing} still unanswered.`:`Your score: ${score}/5. ${score>=4?'Excellent work!':score>=3?'Good effort. Review the items you missed.':'Review the lesson sections and try again.'}`;r.className='feedback '+(!missing&&score>=3?'good':'bad');}
+function resetQuiz(){document.getElementById('quizResult').textContent='';updateProgress();}
+</script>
+</body>
+</html>
